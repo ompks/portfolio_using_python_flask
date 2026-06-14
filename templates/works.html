@@ -15,9 +15,10 @@
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
   <link href="./static/assets/favicon.ico" rel="icon">
 
-  <title>Title page</title>  
+  <title>Works — Om Prakash</title>  
 
-<link href="./static/main.3f6952e4.css" rel="stylesheet"></head>
+<link href="./static/main.3f6952e4.css" rel="stylesheet">
+<link href="./static/style.css" rel="stylesheet"></head>
 
 <body class="">
 <div id="site-border-left"></div>
@@ -62,154 +63,147 @@
       </div>
 
       <div class="col-md-12">
-     
-      <div id="myCarousel" class="carousel slide projects-carousel">
-        <!-- Carousel items -->
-        <div class="carousel-inner">
+        <div id="worksCarousel" class="carousel slide works-carousel" data-ride="carousel" data-interval="false">
+          <ol class="carousel-indicators works-carousel-indicators">
+            <li data-target="#worksCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#worksCarousel" data-slide-to="1"></li>
+            <li data-target="#worksCarousel" data-slide-to="2"></li>
+            <li data-target="#worksCarousel" data-slide-to="3"></li>
+            <li data-target="#worksCarousel" data-slide-to="4"></li>
+            <li data-target="#worksCarousel" data-slide-to="5"></li>
+          </ol>
+
+          <div class="carousel-inner">
             <div class="item active">
-                <div class="row">
-                    <div class="col-sm-4">
-
-                      <a href="./work.html" title="" class="black-image-project-hover">
-                        <img src="./static/assets/images/work01-hover.jpg" alt="" class="img-responsive">
-                      </a>
-                      <div class="card-container card-container-lg">
-                        <h4>001/006</h4>
-                        <h3>GInsure – Scalable Digital Insurance Platform</h3>
-                        <p>Tech Stack: Java, Spring Boot, Kafka, Kubernetes, AWS EKS, MySQL
-
-Designed and developed microservices powering GCash's digital insurance ecosystem. Built highly available REST APIs, integrated third-party insurance providers, and implemented event-driven workflows using Kafka. Ensured scalability, fault tolerance, and secure transaction processing for millions of users.
-
-Key Achievements
-
-Built production-grade microservices serving high transaction volumes.
-Integrated external insurance partners through secure APIs.
-Improved system reliability and scalability using Kubernetes.</p>
-                        <!-- <a href="./work.html" title="" class="btn btn-default">Discover</a> -->
-                        <!-- <a href="https://github.com/ompks/mongocurdoperation" title="" class="btn btn-default">Discover</a> -->
-                      </div>
-                    </div>
-                    <div class="col-sm-4">
-                      <a href="./work.html" title="" class="black-image-project-hover">
-                        <img src="./static/assets/images/work02-hover.jpg" alt="" class="img-responsive">
-                      </a>
-                      <div class="card-container card-container-lg">
-                        <h4>002/006</h4>
-                        <h3>GLoan – Enterprise Lending Platform</h3>
-                        <p>Tech Stack: Java, Spring Boot, Kafka, AWS, Kubernetes
-
-Developed backend services for a large-scale digital lending platform. Implemented loan processing workflows, customer eligibility checks, and asynchronous event processing architecture to support high concurrency and low-latency transactions.
-
-Key Achievements
-
-Built distributed microservices handling loan lifecycle management.
-Improved throughput through asynchronous Kafka-based processing.
-Contributed to production performance optimization initiatives.</p>
-                        <!-- <a href="https://github.com/ompks/spring-demo-one" title="" class="btn btn-default">Discover</a> -->
-                      </div>
-                    </div>
-                    <div class="col-sm-4">
-                      <a href="./work.html" title="" class="black-image-project-hover">
-                        <img src="./static/assets/images/work03-hover.jpg" alt="" class="img-responsive">
-                      </a>
-                      <div class="card-container card-container-lg">
-                        <h4>003/006</h4>
-                        <h3>Send Money Protect</h3>
-                        <p>Tech Stack: Java, Spring Boot, Microservices, Kafka, Kubernetes, AWS EKS
-
-Developed backend microservices for GCash Send Money Protect, a protection service integrated into the money transfer flow. Implemented scalable APIs, asynchronous event processing, and cloud-native deployment practices to support secure, high-volume financial transactions.
-
-Key Achievements
-
-Built production-grade microservices integrated with the GCash money transfer ecosystem.
-
-Implemented Kafka-based event processing for reliable transaction workflows.
-
-Deployed and scaled services on Kubernetes (AWS EKS) using CI/CD automation.
-
-Contributed to performance optimization and operational reliability for a large-scale fintech platform. </p>
-                        <!-- <a href="https://github.com/ompks/docker" title="" class="btn btn-default">Discover</a> -->
-                      </div>
-                    </div>
-                    
-                </div>
-                <!--/row-->
-            </div>
-            <!--/item-->
-            <div class="item">
-                <div class="row">
-                  <div class="col-sm-4">
-                    <a href="./work.html" class="black-image-project-hover">
-                      <img src="./static/assets/images/work02-hover.jpg" alt="Image" class="img-responsive">
+              <div class="row works-slide-row">
+                <div class="col-sm-8 col-sm-offset-2 works-project">
+                  <article class="works-project-card">
+                    <a href="./work.html" title="" class="works-project-image">
+                      <img src="./static/assets/images/work01-hover.jpg" alt="GInsure project" class="img-responsive">
                     </a>
-                    <div class="card-container">
-                      <h4>004/006</h4>
-                      <h3>Image & PDF Compression  Web Application</h3>
-                      <p>Tech Stack: Python, Angular, MySQL
-
-Developed a web-based image/pdf compression platform that significantly reduces image/pdf file sizes while maintaining visual quality. The application enables users to upload, compress, and download optimized images/pdfs, improving storage efficiency and reducing bandwidth consumption.
-
-Key Achievements
-
-Achieved up to 90% image/pdf size reduction.
-Built a user-friendly web interface using Angular.
-Implemented backend compression services in Python.
-Reduced storage and network usage for end users.
-Integrated database support for file management and tracking.</p>
-                      <!-- <a href="https://github.com/ompks/file_sort" class="btn btn-default">Discover</a> -->
+                    <div class="works-project-content">
+                      <h4>001/006</h4>
+                      <h3>GInsure – Scalable Digital Insurance Platform</h3>
+                      <p><span class="works-label">Tech Stack:</span> Java, Spring Boot, Kafka, Kubernetes, AWS EKS, MySQL</p>
+                      <p>Designed and developed microservices powering GCash's digital insurance ecosystem. Built highly available REST APIs, integrated third-party insurance providers, and implemented event-driven workflows using Kafka.</p>
+                      <p class="works-label">Key Achievements</p>
+                      <p>Built production-grade microservices serving high transaction volumes. Integrated external insurance partners through secure APIs. Improved system reliability and scalability using Kubernetes.</p>
                     </div>
-                  </div>
-                   <div class="col-sm-4">
-                      <a href="./work.html" class="black-image-project-hover">
-                        <img src="./static/assets/images/work01-hover.jpg" alt="Image" class="img-responsive">
-                      </a>
-                      <div class="card-container">
-                        <h4>005/006</h4>
-                        <h3>Flask Crud API</h3>
-                        <p>Sample api creation example using flask for crud operation</p>
-                        <a href="https://github.com/ompks/flask_curd_api" class="btn btn-default">Discover</a>
-                      </div>
-                    </div>
-                    
-                    <div class="col-sm-4">
-                      <a href="./work.html" class="black-image-project-hover">
-                        <img src="./static/assets/images/work03-hover.jpg" alt="Image" class="img-responsive">
-                      </a>
-                      <div class="card-container">
-                        <h4>006/006</h4>
-                        <h3>AI-Powered Resume Parsing & Applicant Tracking System</h3>
-                        <p>Tech Stack: Java, Python, Elasticsearch, AWS
-
-Built recruitment automation products capable of extracting candidate information from resumes, tracking hiring workflows, and generating recruitment analytics.
-
-Key Achievements
-
-Developed intelligent resume parsing capabilities.
-Built end-to-end applicant tracking workflows.
-Created Elasticsearch-powered reporting and search features.
-Managed AWS infrastructure for production environments.</p>
-                        <!-- <a href="https://github.com/ompks/flask_curd_api" class="btn btn-default">Discover</a> -->
-                      </div>
-                    </div>
-                    
+                  </article>
                 </div>
-                <!--/row-->
+              </div>
             </div>
-            
-            <!--/item-->
+
+            <div class="item">
+              <div class="row works-slide-row">
+                <div class="col-sm-8 col-sm-offset-2 works-project">
+                  <article class="works-project-card">
+                    <a href="./work.html" title="" class="works-project-image">
+                      <img src="./static/assets/images/work02-hover.jpg" alt="GLoan project" class="img-responsive">
+                    </a>
+                    <div class="works-project-content">
+                      <h4>002/006</h4>
+                      <h3>GLoan – Enterprise Lending Platform</h3>
+                      <p><span class="works-label">Tech Stack:</span> Java, Spring Boot, Kafka, AWS, Kubernetes</p>
+                      <p>Developed backend services for a large-scale digital lending platform. Implemented loan processing workflows, customer eligibility checks, and asynchronous event processing architecture.</p>
+                      <p class="works-label">Key Achievements</p>
+                      <p>Built distributed microservices handling loan lifecycle management. Improved throughput through asynchronous Kafka-based processing. Contributed to production performance optimization initiatives.</p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="row works-slide-row">
+                <div class="col-sm-8 col-sm-offset-2 works-project">
+                  <article class="works-project-card">
+                    <a href="./work.html" title="" class="works-project-image">
+                      <img src="./static/assets/images/work03-hover.jpg" alt="Send Money Protect project" class="img-responsive">
+                    </a>
+                    <div class="works-project-content">
+                      <h4>003/006</h4>
+                      <h3>Send Money Protect</h3>
+                      <p><span class="works-label">Tech Stack:</span> Java, Spring Boot, Microservices, Kafka, Kubernetes, AWS EKS</p>
+                      <p>Developed backend microservices for GCash Send Money Protect, a protection service integrated into the money transfer flow. Implemented scalable APIs and cloud-native deployment practices.</p>
+                      <p class="works-label">Key Achievements</p>
+                      <p>Built production-grade microservices integrated with the GCash money transfer ecosystem. Implemented Kafka-based event processing. Deployed and scaled services on Kubernetes (AWS EKS) using CI/CD automation.</p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="row works-slide-row">
+                <div class="col-sm-8 col-sm-offset-2 works-project">
+                  <article class="works-project-card">
+                    <a href="./work.html" title="" class="works-project-image">
+                      <img src="./static/assets/images/work02-hover.jpg" alt="Image and PDF compression project" class="img-responsive">
+                    </a>
+                    <div class="works-project-content">
+                      <h4>004/006</h4>
+                      <h3>Image &amp; PDF Compression Web Application</h3>
+                      <p><span class="works-label">Tech Stack:</span> Python, Angular, MySQL</p>
+                      <p>Developed a web-based image and PDF compression platform that significantly reduces file sizes while maintaining visual quality. Users can upload, compress, and download optimized files.</p>
+                      <p class="works-label">Key Achievements</p>
+                      <p>Achieved up to 90% file size reduction. Built a user-friendly web interface using Angular. Implemented backend compression services in Python with database support for file tracking.</p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="row works-slide-row">
+                <div class="col-sm-8 col-sm-offset-2 works-project">
+                  <article class="works-project-card">
+                    <a href="./work.html" title="" class="works-project-image">
+                      <img src="./static/assets/images/work01-hover.jpg" alt="Cloud cost optimization project" class="img-responsive">
+                    </a>
+                    <div class="works-project-content">
+                      <h4>005/006</h4>
+                      <h3>Cloud Cost Optimization &amp; Auto-Scaling Framework</h3>
+                      <p><span class="works-label">Tech Stack:</span> AWS EKS, Kubernetes, Argocd, Rancher, GitLab CI/CD, ArgoCD</p>
+                      <p>Developed a cloud cost optimization and auto-scaling framework using AWS EKS, Kubernetes, Argocd, Rancher, GitLab CI/CD, and ArgoCD. This framework allows for the automatic scaling of resources based on the workload and the cost of the resources.</p>
+                      <p class="works-label">Key Achievements</p>
+                      <p>Delivered multimillion-dollar infrastructure cost savings. Automated deployment and scaling operations. Improved cluster utilization and operational efficiency.</p>
+                      <!-- <a href="https://github.com/ompks/flask_curd_api" class="btn btn-default">Discover</a> -->
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="row works-slide-row">
+                <div class="col-sm-8 col-sm-offset-2 works-project">
+                  <article class="works-project-card">
+                    <a href="./work.html" title="" class="works-project-image">
+                      <img src="./static/assets/images/work03-hover.jpg" alt="Resume parsing project" class="img-responsive">
+                    </a>
+                    <div class="works-project-content">
+                      <h4>006/006</h4>
+                      <h3>AI-Powered Resume Parsing &amp; Applicant Tracking System</h3>
+                      <p><span class="works-label">Tech Stack:</span> Java, Python, Elasticsearch, AWS</p>
+                      <p>Built recruitment automation products capable of extracting candidate information from resumes, tracking hiring workflows, and generating recruitment analytics.</p>
+                      <p class="works-label">Key Achievements</p>
+                      <p>Developed intelligent resume parsing capabilities. Built end-to-end applicant tracking workflows. Created Elasticsearch-powered reporting and search features.</p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a class="left carousel-control works-carousel-control" href="#worksCarousel" data-slide="prev" aria-label="Previous slide">
+            <span aria-hidden="true">‹</span>
+          </a>
+          <a class="right carousel-control works-carousel-control" href="#worksCarousel" data-slide="next" aria-label="Next slide">
+            <span aria-hidden="true">›</span>
+          </a>
         </div>
-        <!--/carousel-inner--> 
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
-
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
-     </div>
-
-
-
-    <!--/myCarousel-->
-    </div>
-
-
+      </div>
 
     </div>
   </div>

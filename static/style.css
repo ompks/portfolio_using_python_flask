@@ -1,0 +1,161 @@
+/* Works page — sliding carousel */
+.works-carousel {
+  margin-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.works-carousel .carousel-inner {
+  overflow: hidden;
+}
+
+.works-carousel .carousel-inner > .item {
+  display: none;
+}
+
+.works-carousel .carousel-inner > .item.active {
+  display: block;
+}
+
+.works-slide-row {
+  margin: 0;
+}
+
+.works-slide-row > .works-project {
+  display: flex;
+  float: none;
+}
+
+.works-project {
+  margin-bottom: 0;
+}
+
+.works-project-card {
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.works-project-image {
+  display: block;
+  overflow: hidden;
+}
+
+.works-project-image img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+  filter: contrast(200%) grayscale(100%);
+  transition: filter 0.2s linear;
+}
+
+.works-project-image:hover img {
+  filter: none;
+}
+
+.works-project-content {
+  padding: 1.75rem 2rem 2rem;
+  flex: 1;
+}
+
+.works-project-content h4 {
+  margin: 0 0 0.5rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #888;
+}
+
+.works-project-content h3 {
+  margin: 0 0 1rem;
+  font-size: 1.35rem;
+  line-height: 1.35;
+}
+
+.works-project-content p {
+  margin: 0 0 0.75rem;
+  line-height: 1.65;
+  font-size: 0.95rem;
+}
+
+.works-project-content p:last-child {
+  margin-bottom: 0;
+}
+
+.works-project-content .works-label {
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+.works-project-content .btn {
+  margin-top: 1.25rem;
+}
+
+.works-carousel-indicators {
+  position: static;
+  width: auto;
+  margin: 0 0 1.5rem;
+  text-align: center;
+}
+
+.works-carousel-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 6px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.works-carousel-indicators li.active {
+  background-color: #000;
+}
+
+.works-carousel-control {
+  top: 50%;
+  bottom: auto;
+  width: 50px;
+  height: 50px;
+  margin-top: -25px;
+  border: 1px solid #000;
+  background-color: #000;
+  font-size: 30px;
+  color: #fff;
+  opacity: 1;
+  text-shadow: none;
+  background-image: none;
+}
+
+.works-carousel-control:hover,
+.works-carousel-control:focus {
+  opacity: 0.85;
+  color: #fff;
+}
+
+.works-carousel-control span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+  line-height: 1;
+}
+
+@media (max-width: 992px) {
+  .works-project-image img {
+    height: 220px;
+  }
+
+  .works-project-content {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .works-carousel-control {
+    display: none;
+  }
+}
